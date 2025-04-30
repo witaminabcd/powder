@@ -1,0 +1,15 @@
+body {
+  font-size: $font-primary-size;
+  font-family: $font-primary-family;
+  //font-family: Lineseed2 ;
+  //line-height: $my-line-height;
+  line-height: 20px;
+
+  //color: $color-text-main;
+  background-color: $color-white;
+  //min-width: 320px;
+  color:#1C1230;
+  display: flex;
+  flex-direction: column;
+
+}
