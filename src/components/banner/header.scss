@@ -1,0 +1,26 @@
+.header{
+  @include container();
+
+  .header-wrap{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .top-menu{
+      display: flex;
+      list-style-type: none;
+      text-decoration: none;
+      gap: 20px;
+      li{
+        color: white;
+      }
+    }
+    .header-info{
+      display: grid;
+      gap: 5px;
+      .header-info__tel{
+        justify-self: end;
+      }
+    }
+  }
+}

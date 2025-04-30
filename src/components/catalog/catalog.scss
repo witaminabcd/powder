@@ -1,0 +1,38 @@
+.catalog{
+  .catalog-wrap{
+    @include container();
+    .catalog__blocks{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+      .catalog__block{
+        background: var(--Neutral-200, #E8E8E8);
+        padding: 25px;
+        display: grid;
+        //align-content: start;
+        //justify-content: start;
+        gap: 20px;
+        border-radius: 30px;
+        img{
+          max-width: 100%;
+        }
+        .catalog__block-text{
+          display: flex;
+          justify-content: space-between;
+          gap: 30px;
+          &:after{
+            content: url("../img/btnarrow.svg");
+            width: 100px;
+            height: 66px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            border-radius: 100px;
+            background-color: white;
+
+          }
+        }
+      }
+    }
+  }
+}

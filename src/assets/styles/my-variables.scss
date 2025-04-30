@@ -1,3 +1,4 @@
+$color-light-green:#B3E718;
 
 
 $color-red-btn:#ea285e;
@@ -37,6 +38,23 @@ $my-rhythm:  10px;
   @media #{$tablet-all-only} {
     padding-top: myrhythm(3);
     padding-bottom: myrhythm(3);
+  }
+  @media #{$mobile-only-two} {
+    padding-top: myrhythm(2);
+    padding-bottom: myrhythm(2);
+
+  }
+}
+@mixin padding-vertical-50(){
+  padding-top: myrhythm(5);
+  padding-bottom: myrhythm(5);
+  @media #{$desktop-only} {
+    padding-top: myrhythm(5);
+    padding-bottom: myrhythm(5);
+  }
+  @media #{$tablet-all-only} {
+    padding-top: myrhythm(4);
+    padding-bottom: myrhythm(4);
   }
   @media #{$mobile-only-two} {
     padding-top: myrhythm(2);
