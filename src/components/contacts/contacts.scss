@@ -1,0 +1,31 @@
+.contacts{
+  .contacts-wrap{
+    @include container();
+    .contacts__blocks{
+      display: grid;
+      grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+      gap: 20px;
+      .contacts-fraim{
+        overflow: hidden;
+        border-radius: 30px;
+      }
+      .contacts-info{
+        background-color: $color-background-dark-all;
+        padding: 70px;
+        display: grid;
+        //gap: 10px;
+        align-content: center;
+        border-radius: 30px;
+        div{
+          font-family: 42dot Sans;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 60.95px;
+          letter-spacing: 0%;
+
+        }
+
+      }
+    }
+  }
+}

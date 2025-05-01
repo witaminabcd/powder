@@ -1,0 +1,44 @@
+.equipment{
+  .equipment-wrap{
+    @include container();
+    .equipment__blocks{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-auto-flow: column;
+      gap: 20px;
+
+      .equipment__block{
+        background: var(--Neutral-100, #F1F1F1);
+        border-radius: 30px;
+      }
+      .equipment__block:nth-child(1){
+        grid-row: span 2;
+        position: relative;
+        .equipment__block-text{
+          position: absolute;
+          left: 20px;
+          bottom: 50px;
+        }
+      }
+      .equipment__block:nth-child(2){
+        position: relative;
+        .equipment__block-text{
+          position: absolute;
+          left: 20px;
+          bottom: 100px;
+          max-width: 200px;
+        }
+      }
+      .equipment__block:nth-child(3){
+        position: relative;
+        .equipment__block-text{
+          position: absolute;
+          left: 20px;
+          bottom: 100px;
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}

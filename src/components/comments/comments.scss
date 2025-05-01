@@ -1,0 +1,96 @@
+.comments{
+  .comments-section {
+    @include container();
+  }
+
+
+
+  .comments-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    //flex-wrap: wrap;
+  }
+
+  .comment-card {
+    background: $color-background-dark-faq;
+    border-radius: 30px;
+    padding: 25px 25px 100px 25px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .comment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-info {
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto auto;
+    justify-items: start;
+    .user-avatar{
+      grid-row: span 2;
+    }
+
+  }
+
+  .user-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+  }
+
+  .user-name {
+    margin-bottom: 8px;
+    color: #333;
+    align-self: end;
+    font-family: 42dot Sans;
+    font-weight: 400;
+    font-size: 34.76px;
+    line-height: 34.76px;
+    letter-spacing: 0%;
+
+  }
+
+  .rating {
+    color: #ffc107;
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .comment-text {
+    font-family: 42dot Sans;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+
+  }
+
+  /* Адаптивность */
+  @media (max-width: 992px) {
+    .comment-card {
+      width: calc(50% - 15px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .comment-card {
+      width: 100%;
+    }
+
+    body {
+      padding: 20px;
+    }
+  }
+}

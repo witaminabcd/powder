@@ -1,0 +1,12 @@
+.swipergood{
+  @include padding-vertical-50();
+  .swiper-wrapper{
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    .swiper-slide{
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}

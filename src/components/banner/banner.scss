@@ -13,7 +13,8 @@
       display: flex;
       cursor: pointer;
       &:after{
-        content: url("../img/btnarrow.svg");
+        content: "";
+        background: url("../img/btnarrow.svg")  center no-repeat;
         width: 60px;
         height: 60px;
         display: flex;

@@ -1,0 +1,28 @@
+.works{
+  .works-wrap{
+    @include container();
+    .works__blocks{
+      display: grid;
+      grid-auto-flow: column;
+      gap: 20px;
+      .works__block{
+        display: grid;
+        background-color: $color-background-dark-all;
+        border-radius: 30px;
+        img{
+          max-width: 100%;
+        }
+        .works__block-text{
+          font-family: 42dot Sans;
+          font-weight: 400;
+          font-size: 34px;
+          line-height: 34.85px;
+          letter-spacing: 0%;
+          text-align: center;
+          padding: 30px;
+
+        }
+      }
+    }
+  }
+}
