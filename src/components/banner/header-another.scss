@@ -1,31 +1,37 @@
-.header{
+.header-another {
 
+  background-color: $color-light-dark;
 
-  .header-wrap{
+  .header-wrap {
     @include container();
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .top-menu{
+
+    .top-menu {
       display: flex;
       list-style-type: none;
       text-decoration: none;
       gap: 20px;
-      li{
+
+      li {
         color: white;
       }
     }
-    .header-info{
+
+    .header-info {
       display: grid;
       gap: 5px;
-      .header-info__tel{
+
+      .header-info__tel {
         justify-self: end;
       }
     }
   }
 }
-.header-top{
+
+.header-top {
   background-color: $color-light-dark;
   position: fixed;
   z-index: 1000;

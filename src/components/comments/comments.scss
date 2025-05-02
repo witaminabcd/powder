@@ -1,14 +1,15 @@
 .comments{
   .comments-section {
     @include container();
+    overflow: hidden;
   }
 
 
 
   .comments-container {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    //display: flex;
+    //gap: 20px;
+    //justify-content: space-between;
     //flex-wrap: wrap;
   }
 
@@ -16,7 +17,7 @@
     background: $color-background-dark-faq;
     border-radius: 30px;
     padding: 25px 25px 100px 25px;
-    width: calc(33.333% - 20px);
+    //width: calc(33.333% - 20px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }

@@ -1,0 +1,40 @@
+
+{% extends '../assets/layout/base.twig' %}
+
+{% block top %}
+
+{% endblock %}
+
+{% block body %}
+
+    {% set title = 'Главная - home' %}
+    {% set meta_d = 'Описание' %}
+    {% set theme_color = '#FFFFFF' %}
+    {% set body_class = 'page' %}
+
+    {#    <main>#}
+    {#        <h1 class="visually-hidden">Заголовок</h1>#}
+
+    {% include '../components/banner/header-another.twig' %}
+
+    {% include '../components/texting/texting.twig' %}
+
+
+    {% include '../components/header-mobile/header-mobile.twig' %}
+
+    {% include '../components/footer/footer.twig' %}
+
+    {% include '../components/modals/modal-big.twig' %}
+    {% include '../components/modals/modal-select.twig' %}
+    {% include '../components/thx-modal/thx-modal.twig' %}
+
+
+
+
+
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

@@ -1,0 +1,13 @@
+.texting{
+  @include container();
+  .texting-title{
+    font-family: 42dot Sans;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 30px;
+
+  }
+}

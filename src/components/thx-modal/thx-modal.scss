@@ -1,0 +1,36 @@
+.thx-modal{
+  width: 555px;
+  height: 222px;
+  .thx-modal-wrap{
+
+    padding: 45px 75px;
+    background-color: $color-light-green;
+    border-radius: 20px;
+
+    .thx-modal-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
+      font-family: 42dot Sans;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 110.00000000000001%;
+      letter-spacing: 0%;
+      text-align: center;
+      span{
+        font-family: 42dot Sans;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 110.00000000000001%;
+        letter-spacing: 0%;
+        text-align: center;
+
+      }
+    }
+
+
+
+  }
+}

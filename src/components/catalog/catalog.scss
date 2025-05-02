@@ -9,10 +9,21 @@
         background: var(--Neutral-200, #E8E8E8);
         padding: 25px;
         display: grid;
-        //align-content: start;
-        //justify-content: start;
+
         gap: 20px;
         border-radius: 30px;
+        &:hover{
+          background:$color-light-green;
+          .catalog__block-text{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            &:after {
+              background-color: $color-light-dark;
+              content: url("../img/Arrowlight.svg");
+            }
+            }
+        }
         img{
           max-width: 100%;
         }

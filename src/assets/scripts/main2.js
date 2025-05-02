@@ -5,7 +5,6 @@ import Swiper from 'swiper/bundle';
 import $ from 'jquery';
 import jQuery from 'jquery';
 
-// $('.swiper').css('display','none')
 
 const swiper = new Swiper('.swipergood', {
     // modules: [Navigation, Pagination, Scrollbar],
@@ -36,6 +35,94 @@ const swiper = new Swiper('.swipergood', {
         768: {
             slidesPerView: 3,
             spaceBetween: 20
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        }
+    },
+    // Navigation arrows
+    //     nextButton: '.swiper2-button-next',
+    //     prevButton: '.swiper2-button-prev',
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+const swiperWorks = new Swiper('.swiperworks', {
+    // modules: [Navigation, Pagination, Scrollbar],
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    autoplay: {
+        delay: 5000,
+    },
+    longSwipesRatio: 0.5,
+    pagination: {
+        clickable: true,
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    navigation: {
+        nextEl: '.swiper2-button-next',
+        prevEl: '.swiper2-button-prev',
+    },
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        }
+    },
+    // Navigation arrows
+    //     nextButton: '.swiper2-button-next',
+    //     prevButton: '.swiper2-button-prev',
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+const swiperComments = new Swiper('.swipercomments', {
+    // modules: [Navigation, Pagination, Scrollbar],
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 10,
+
+    autoplay: {
+        delay: 4000,
+    },
+    longSwipesRatio: 0.5,
+    pagination: {
+        clickable: true,
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    navigation: {
+        nextEl: '.swiper2-button-next',
+        prevEl: '.swiper2-button-prev',
+    },
+    breakpoints: {
+
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 0
         },
         1280: {
             slidesPerView: 3,
@@ -126,6 +213,58 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Форма отправлена!');
     modalOverlay.classList.remove('active');
+});
+
+
+
+
+
+// Получаем элементы
+const modalOverlay2 = document.getElementById('modalOverlay2');
+const modalClose2 = document.getElementById('modalClose2');
+const openModal2 = document.getElementById('openModal2');
+
+// Открытие модального окна
+openModal2.addEventListener('click', () => {
+    modalOverlay2.classList.add('active');
+});
+
+// Закрытие модального окна
+modalClose2.addEventListener('click', () => {
+    modalOverlay2.classList.remove('active');
+});
+
+// Закрытие при клике вне модального окна
+modalOverlay2.addEventListener('click', (e) => {
+    if (e.target === modalOverlay2) {
+        modalOverlay2.classList.remove('active');
+    }
+});
+
+// Обработка формы
+const form2 = document.querySelector('.modal-form2');
+form2.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Форма отправлена!');
+    modalOverlay2.classList.remove('active');
+});
+
+
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 100) {
+        header.classList.add('header-top');
+    } else {
+        header.classList.remove('header-top');
+    }
 });
 
 const swiperportfolio = new Swiper('.swiperportfolio', {
