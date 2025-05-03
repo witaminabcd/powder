@@ -33,12 +33,10 @@
 
         td {
           padding: 30px;
-          //border-radius: 13px;
         }
 
         td:first-child {
-          //border-left: 14px;
-          //border-top: 14px;
+
 
         }
 
@@ -58,8 +56,148 @@
         }
       }
     }
-    .prices-text{
+
+    .prices-text {
       padding-top: 30px;
+    }
+  }
+  @media #{$mobile-landscape-only}{
+    .prices-wrap {
+      @include container();
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+          background-color: $color-light-green;
+          border-radius: 14px;
+
+          tr {
+            padding: 0!important;
+            margin: auto;
+            vertical-align: center;
+            th{
+              padding: 5px!important;
+              text-align: center;
+            }
+            th:nth-child(2),:nth-child(3){
+              display: none;
+            }
+            td:nth-child(2),:nth-child(3){
+              display: none;
+            }
+          }
+        }
+        tr {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px!important;
+          td{
+            text-align: center;
+            padding: 10px!important;
+            display: flex;
+            justify-content: center!important;
+          }
+
+        }
+        tr {
+
+          th:nth-child(2),:nth-child(3){
+            display: none;
+          }
+          td:nth-child(2),:nth-child(3){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media #{$tablet-only}{
+    .prices-wrap {
+      @include container();
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+          background-color: $color-light-green;
+          border-radius: 14px;
+
+          tr {
+
+            th{
+              padding: 15px!important;
+            }
+            th:nth-child(2),:nth-child(3){
+              display: none;
+            }
+            td:nth-child(2),:nth-child(3){
+              display: none;
+            }
+          }
+        }
+        tr {
+          td{
+            padding: 15px!important;
+          }
+
+        }
+        tr {
+
+          th:nth-child(2),:nth-child(3){
+            display: none;
+          }
+          td:nth-child(2),:nth-child(3){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media #{$tablet-landscape-only}{
+    .prices-wrap {
+      @include container();
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+          background-color: $color-light-green;
+          border-radius: 14px;
+
+          tr {
+
+            th{
+              padding: 15px!important;
+            }
+            th:nth-child(2),:nth-child(3){
+              display: none;
+            }
+            td:nth-child(2),:nth-child(3){
+              display: none;
+            }
+          }
+        }
+        tr {
+          td{
+            padding: 15px!important;
+          }
+
+        }
+        tr {
+
+          th:nth-child(2),:nth-child(3){
+            display: none;
+          }
+          td:nth-child(2),:nth-child(3){
+            display: none;
+          }
+        }
+      }
     }
   }
 }

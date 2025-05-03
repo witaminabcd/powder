@@ -1,4 +1,5 @@
 .swipergood{
+  overflow: hidden;
   @include padding-vertical-50();
   .swiper-wrapper{
     -webkit-transition-timing-function: linear !important;

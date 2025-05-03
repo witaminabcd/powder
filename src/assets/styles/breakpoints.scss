@@ -4,6 +4,28 @@
 //@media #{$tablet-only} { ... }
 //@media #{$desktop} { ... }
 //@media #{$desktop-only} { ... }
+$breakpoints: (
+        'mobile': 0,
+        'mobile-landscape': 320,
+        'tablet': 480,
+        'tablet-landscape': 640,
+        'desktop': 1200,
+        'desktop-wide':         1920,
+        'fullhd': 2560,
+        'ultra': 5000
+);
+//$mobile-landscape-only 320-480  @media #{$mobile-landscape-only}{}
+//$tablet-only 480-640            @media #{$tablet-only}{}
+//$tablet-landscape-only 640-1200  @media #{$tablet-landscape-only}{}
+//$desktop-only 1200-1920           @media #{$desktop-only}{}
+//$desktop-wide-only 1920-2560
+//$fullhd 2560----
+
+//@media #{$mobile-landscape-only}{}
+//@media #{$tablet-only}{}
+//@media #{$tablet-landscape-only}{}
+//@media #{$desktop-only}{}
+
 //$breakpoints:  (
 //        'mobile':               0,
 //        'mobile-landscape':     568,
@@ -18,7 +40,7 @@
 $screen: "screen";
 $mobile: "#{$screen}";
 //(от 0-768) при смене ширины использовать !important
-//$mobile-only-two: "#{$screen} and (max-width: #{map-get($breakpoints, 'tablet') - 1}px)";
+$mobile-only-two: "#{$screen} and (max-width: #{map-get($breakpoints, 'tablet') - 1}px)";
 
 //чтобы не путать это и есть ALL ONLY
 $mobile-only-two: "#{$screen} and (max-width: #{map-get($breakpoints, 'tablet') - 1 }px)";
@@ -72,3 +94,29 @@ $breakpoints-list: (
         'fullhd':           $fullhd,
         'ultra':            $ultra
 );
+//$breakpoints-list: (
+//        'mobile': $mobile-powder,
+//        'mobile-landscape': $mobile-landscape-powder,
+//        'tablet': $tablet-powder,
+//        'tablet-landscape': $tablet-landscape-powder,
+//        'desktop': $desktop-powder,
+//  'desktop-wide':     $desktop-wide,
+//        'fullhd': $fullhd-powder,
+//        'ultra': $fullhd-powder
+//);
+
+//$breakpowrder: (
+//        'mobile': "#{$screen}",
+//        'mobile-landscape': 320,
+//        'tablet': 480,
+//        'tablet-landscape': 640,
+//        'desktop': 1200,
+//        'fullhd': 1920,
+//        'ultra': 2560
+//);
+//$mobile-powder: "#{$screen} and  (max-width:#{map-get($breakpowrder, 'mobile') - 1}px)";
+//$mobile-landscape-powder: "#{$screen} and (min-width:#{map-get($breakpowrder, 'mobile-landscape')}px) and (max-width:#{map-get($breakpowrder, 'tablet') - 1}px)";
+//$tablet-powder: "#{$screen} and (min-width:#{map-get($breakpowrder, 'tablet')}px) and (max-width:#{map-get($breakpowrder, 'tablet-landscape') - 1}px)";
+//$tablet-landscape-powder: "#{$screen} and (min-width:#{map-get($breakpowrder, 'tablet-landscape')}px) and (max-width:#{map-get($breakpowrder, 'desktop') - 1}px)";
+//$desktop-powder: "#{$screen} and (min-width:#{map-get($breakpowrder, 'desktop')}px) and (max-width:#{map-get($breakpowrder, 'fullhd') - 1}px)";
+//$fullhd-powder: "#{$screen} and (min-width:#{map-get($breakpowrder, 'fullhd')}px) and (max-width:#{map-get($breakpowrder, 'ultra') - 1}px)";

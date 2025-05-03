@@ -3,14 +3,22 @@
     @include container();
     .equipment__blocks{
       display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      grid-auto-flow: column;
+      grid-template-columns: calc(60% - 10px)  calc(40% - 10px);
+      //grid-template-columns: repeat(auto-fill, minmax(calc(50% - 10px), 1fr));
+      //grid-template-columns: auto auto;
+      //grid-template-rows: auto auto;
+      //grid-auto-flow: column;
       gap: 20px;
 
       .equipment__block{
         background: var(--Neutral-100, #F1F1F1);
         border-radius: 30px;
+        .equipment__block-img{
+          img{
+            object-fit: cover;
+            width: 100%;
+          }
+        }
       }
       .equipment__block:nth-child(1){
         grid-row: span 2;

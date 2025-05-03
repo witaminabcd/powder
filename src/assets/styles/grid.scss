@@ -47,26 +47,26 @@
 }
 
 // Создает строку
-@mixin row() {
-  display: flex;
-  flex-wrap: wrap;
-
-  @if $grid-indents {
-    @each $breakpoint-name, $breakpoint-value in $breakpoints-list {
-      @if map_get($grid-indents, $breakpoint-name) > 0 {
-        @if $breakpoint-name == 'mobile' {
-          margin-left: map_get($grid-indents, 'mobile') / 2 * -1px;
-          margin-right: map_get($grid-indents, 'mobile') / 2 * -1px;
-        } @else {
-          @media #{$breakpoint-value} {
-            margin-left: map_get($grid-indents, $breakpoint-name) / 2 * -1px;
-            margin-right: map_get($grid-indents, $breakpoint-name) / 2 * -1px;
-          }
-        }
-      }
-    }
-  }
-}
+//@mixin row() {
+//  display: flex;
+//  flex-wrap: wrap;
+//
+//  @if $grid-indents {
+//    @each $breakpoint-name, $breakpoint-value in $breakpoints-list {
+//      @if map_get($grid-indents, $breakpoint-name) > 0 {
+//        @if $breakpoint-name == 'mobile' {
+//          margin-left: map_get($grid-indents, 'mobile') / 2 * -1px;
+//          margin-right: map_get($grid-indents, 'mobile') / 2 * -1px;
+//        } @else {
+//          @media #{$breakpoint-value} {
+//            margin-left: map_get($grid-indents, $breakpoint-name) / 2 * -1px;
+//            margin-right: map_get($grid-indents, $breakpoint-name) / 2 * -1px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
 
 // Создает колонку
 // $number - {Number} - количество колонок

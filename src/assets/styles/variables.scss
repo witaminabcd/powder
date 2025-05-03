@@ -2,17 +2,26 @@
 // Максимальная ширина контейнера
 // Рекомендуемые зачения и единицы: auto | px | % | vw
 // Если единицы не указаны будут px
+//$grid-container: (
+//        'mobile':               90%,
+//        'mobile-landscape':     95%,
+//        'tablet':               98%,
+//        'tablet-landscape':     98%,
+//        'desktop':              98%,
+//        'desktop-wide':         80%,
+//        'fullhd':               80%,
+//        'ultra':                80%
+//);
 $grid-container: (
-        'mobile':               90%,
-        'mobile-landscape':     95%,
-        'tablet':               98%,
-        'tablet-landscape':     98%,
-        'desktop':              98%,
-        'desktop-wide':         80%,
-        'fullhd':               80%,
-        'ultra':                80%
+				'mobile':               90%,
+				'mobile-landscape':     95%,
+				'tablet':               90%,
+				'tablet-landscape':     92.5%,
+				'desktop':              80%,
+				'desktop-wide':         1690px,
+				'fullhd':               1690px,
+				'ultra':                1690px
 );
-
 // column amount
 $grid-columns:            36;
 
@@ -25,7 +34,7 @@ $grid-indents: (
         'tablet':               0,
         'tablet-landscape':     0,
         'desktop':              0,
-        'desktop-wide':         0,
+        //'desktop-wide':         0,
         'fullhd':               0,
         'ultra':                0
 );
@@ -35,14 +44,21 @@ $rhythm:                  4px;
 
 // breakpoints
 $breakpoints:  (
-        'mobile':               0,
-        'mobile-landscape':     568,
-        'tablet':               768,
-        'tablet-landscape':     1024,
-        'desktop':              1280,
-        'desktop-wide':         1440,
-        'fullhd':               1920,
-        'ultra':                2560
+        //'mobile':               0,
+        //'mobile-landscape':     568,
+        //'tablet':               768,
+        //'tablet-landscape':     1024,
+        //'desktop':              1280,
+        //'desktop-wide':         1440,
+        //'fullhd':               1920,
+        //'ultra':                2560
+				'mobile':               0,
+				'mobile-landscape':     320,
+				'tablet':               480,
+				'tablet-landscape':    640,
+				'desktop':              1200,
+				'fullhd':               1920,
+				'ultra':                2560
 );
 
 /* COLORS */
@@ -100,12 +116,14 @@ $color-link-active:      	        	$color-brand-primary-light;
 // FONTS
 $font-primary-basic:                22px;
 $font-primary-size:									1rem;
-$font-primary-name:									'Montserat2';
-$font-primary-family:								'Montserat', sans-serif;
+$font-primary-name:									'42dotSans';
+$font-primary-family:								'42dotSans';
 $font-primary-light:								300;
 $font-primary-regular:							400;
 $font-primary-samibold:							500;
 $font-primary-bold:									700;
+$font-primary-extrabold:									800;
+
 
 $font-secondary-basic:              10px;
 $font-secondary-size:								1.4rem;

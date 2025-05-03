@@ -9,7 +9,6 @@
         background: var(--Neutral-200, #E8E8E8);
         padding: 25px;
         display: grid;
-
         gap: 20px;
         border-radius: 30px;
         &:hover{
@@ -22,7 +21,7 @@
               background-color: $color-light-dark;
               content: url("../img/Arrowlight.svg");
             }
-            }
+          }
         }
         img{
           max-width: 100%;
@@ -33,7 +32,7 @@
           gap: 30px;
           &:after{
             content: url("../img/btnarrow.svg");
-            width: 100px;
+            width: 66px;
             height: 66px;
             display: grid;
             justify-content: center;
@@ -43,6 +42,268 @@
 
           }
         }
+      }
+    }
+  }
+  @media #{$mobile-landscape-only}{
+    .catalog-wrap {
+      @include container();
+
+      .catalog__blocks {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+        //grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+
+        padding: 5px;
+        gap: 10px;
+        justify-content: space-between;
+        .catalog__block{
+          padding: 5px;
+          gap: 5px;
+          border-radius: 13px;
+          &:hover{
+            background:$color-light-green;
+            .catalog__block-text{
+              display: flex;
+              justify-content: space-between;
+              gap: 30px;
+              &:after {
+                background-color: $color-light-dark;
+                content: "";
+                background-image: url("../img/Arrowlight.svg");
+                background-size: 8px 8px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+              }
+            }
+          }
+          .catalog__block-img{
+            max-width: 100%;
+            img{
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+          .catalog__block-text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            padding:0 0px;
+            &:after{
+              content: "";
+              background-image: url("../img/btnarrow.svg");
+              background-size: 8px 8px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 30px;
+              //margin: 0 10px;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 100px;
+              background-color: white;
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+  @media #{$tablet-only}{
+    .catalog-wrap {
+      @include container();
+
+      .catalog__blocks {
+        display: grid;
+        //grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+        grid-template-columns: repeat(3, 1fr);
+
+        padding: 5px;
+        gap: 10px;
+        justify-content: space-between;
+        .catalog__block{
+          padding: 5px;
+          gap: 10px;
+          border-radius: 13px;
+          &:hover{
+            background:$color-light-green;
+            .catalog__block-text{
+              display: flex;
+              justify-content: space-between;
+              gap: 30px;
+              &:after {
+                background-color: $color-light-dark;
+                content: "";
+                background-image: url("../img/Arrowlight.svg");
+                background-size: 8px 8px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+              }
+            }
+          }
+          .catalog__block-img{
+            max-width: 100%;
+            img{
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+          .catalog__block-text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            padding:0 10px;
+            &:after{
+              content: "";
+              background-image: url("../img/btnarrow.svg");
+              background-size: 8px 8px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 25px;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 100px;
+              background-color: white;
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+  @media #{$tablet-landscape-only}{
+    .catalog-wrap {
+      @include container();
+
+      .catalog__blocks {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+        padding: 5px;
+        gap: 10px;
+        justify-content: space-between;
+        .catalog__block{
+          padding: 5px;
+          gap: 10px;
+          border-radius: 13px;
+          &:hover{
+            background:$color-light-green;
+            .catalog__block-text{
+              display: flex;
+              justify-content: space-between;
+              gap: 30px;
+              &:after {
+                background-color: $color-light-dark;
+                content: "";
+                background-image: url("../img/Arrowlight.svg");
+                background-size: 8px 8px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+              }
+            }
+          }
+          .catalog__block-img{
+            max-width: 100%;
+            img{
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+          .catalog__block-text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            padding:0 10px;
+            &:after{
+              content: "";
+              background-image: url("../img/btnarrow.svg");
+              background-size: 8px 8px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 25px;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 100px;
+              background-color: white;
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+  @media #{$desktop-only}{
+    .catalog-wrap {
+      @include container();
+
+      .catalog__blocks {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+        padding: 5px;
+        gap: 10px;
+        justify-content: space-between;
+        .catalog__block{
+          padding: 10px;
+          gap: 10px;
+          .catalog__block-img{
+            max-width: 100%;
+            img{
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+          .catalog__block-text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding:0 10px;
+            &:after{
+              content: "";
+              background-image: url("../img/btnarrow.svg");
+              background-size: 12px ;
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 31px;
+              height: 31px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 100px;
+              background-color: white;
+
+            }
+          }
+        }
+
       }
     }
   }
