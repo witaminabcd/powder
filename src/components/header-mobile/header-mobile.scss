@@ -1,7 +1,7 @@
 .header-mobile{
   display: none;
 }
-@media #{$mobile-only-two} {
+@media #{$tablet-landscape-only} {
   .header-mobile{
 
     position: fixed;
@@ -12,7 +12,7 @@
     background-color: $color-background-dark-modal;
     display: flex;
 
-    display: none;
+    //display: none;
 
     justify-content: center;
     align-items: center;

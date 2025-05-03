@@ -24,8 +24,8 @@
     border-radius: 8px;
     padding: 30px;
     width: 100%;
-    max-width: 614px;
-    height: 517px;
+    max-width: calc(614px - 60px);
+    height: calc(517px - 60px);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -160,4 +160,5 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  @import "./modal-select-media";
 }
