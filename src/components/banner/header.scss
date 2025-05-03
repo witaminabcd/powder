@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .header-mobile {
+    .header-mobile-logo {
       display: none;
     }
     .top-menu {
@@ -35,6 +35,77 @@
       display: none;
     }
   }
+  @media #{$mobile-landscape-only}{
+    .header-wrap {
+      max-width: 100%;
+      width: 100%;
+      .header-mobile-logo {
+        display: block;
+        max-width: 146px;
+      }
+
+      .header-logo {
+        display: none;
+      }
+      .top-menu {
+        display: none;
+      }
+      .header-info{
+        display: none;
+      }
+      .gamburger{
+        display: block;
+      }
+    }
+
+  }
+  @media #{$tablet-only}{
+    .header-wrap {
+      max-width: 100%;
+      width: 100%;
+      .header-mobile-logo {
+        display: block;
+      }
+
+      .header-logo {
+        display: none;
+      }
+      .top-menu {
+        display: none;
+      }
+      .header-info{
+        display: none;
+      }
+      .gamburger{
+        display: block;
+      }
+    }
+
+  }
+  @media #{$tablet-landscape-only} {
+    .header-wrap {
+
+      .header-mobile-logo {
+        display: block;
+      }
+
+      .header-logo {
+        display: none;
+      }
+
+      .top-menu {
+        display: none;
+      }
+      .header-info{
+        display: none;
+      }
+      .gamburger{
+        display: block;
+      }
+    }
+
+
+  }
 }
 
 .header-top {
@@ -42,52 +113,11 @@
   position: fixed;
   z-index: 1000;
   width: 100%;
-}
-
-@media #{$tablet-landscape-only} {
-  .header {
-    .header-wrap {
-      .header-mobile {
-        display: block;
-      }
-
-      .header-logo {
-        display: none;
-      }
-      .top-menu {
-        display: none;
-      }
-      .header-info{
-        display: none;
-      }
-      .gamburger{
-        display: block;
-      }
-    }
-  }
-
-}
-@media #{$tablet-only}{
-  .header {
-    .header-wrap {
-      max-width: 100%;
-      width: 100%;
-      .header-mobile {
-        display: block;
-      }
-
-      .header-logo {
-        display: none;
-      }
-      .top-menu {
-        display: none;
-      }
-      .header-info{
-        display: none;
-      }
-      .gamburger{
-        display: block;
-      }
-    }
+  left: 0;
+  @media(min-width: 0) and (max-width: 1199px) {
+    background-color: $color-light-green;
   }
 }
+
+
+

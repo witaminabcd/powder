@@ -243,7 +243,15 @@ h1{
   line-height: 110.00000000000001%;
   letter-spacing: 0%;
   color: white;
+  @media #{$mobile-landscape-only}{
+    font-family: 42dot Sans;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    text-align: center;
 
+  }
   @media  #{$tablet-landscape-only}{
     font-family: 42dotSans;
     font-weight: 500;

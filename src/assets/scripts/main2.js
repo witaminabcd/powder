@@ -202,10 +202,21 @@ const modalOverlay = document.getElementById('modalOverlay');
 const modalClose = document.getElementById('modalClose');
 const openModal = document.getElementById('openModal');
 
+const onenMiniForm = document.querySelector('.catalog__block');
+
+document.addEventListener('click',(e)=>{
+    if(e.target.closest('.catalog__block')==onenMiniForm){
+        modalOverlay.classList.add('active');
+    }else{
+        console.log(e.target.closest('.catalog__block'))
+        console.log(onenMiniForm)
+
+    }
+})
 // Открытие модального окна
-openModal.addEventListener('click', () => {
-    modalOverlay.classList.add('active');
-});
+// openModal.addEventListener('click', () => {
+//     modalOverlay.classList.add('active');
+// });
 
 // Закрытие модального окна
 modalClose.addEventListener('click', () => {
@@ -231,22 +242,31 @@ form.addEventListener('submit', (e) => {
 
 
 
-// Получаем элементы
 const modalOverlay2 = document.getElementById('modalOverlay2');
 const modalClose2 = document.getElementById('modalClose2');
 const openModal2 = document.getElementById('openModal2');
 
-// Открытие модального окна
-openModal2.addEventListener('click', () => {
-    modalOverlay2.classList.add('active');
-});
+// const openModal2 = document.get('openModal2');
+//
+// banner-btn
+const onenBigForm = document.querySelector('.banner-btn');
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.banner-btn') == onenBigForm) {
+            modalOverlay2.classList.add('active');
+        } else {
+            console.log(e.target.closest('.catalog__block'))
+            console.log(onenBigForm)
 
-// Закрытие модального окна
+        }
+    })
+// openModal2.addEventListener('click', () => {
+//     modalOverlay2.classList.add('active');
+// });
+
 modalClose2.addEventListener('click', () => {
     modalOverlay2.classList.remove('active');
 });
 
-// Закрытие при клике вне модального окна
 modalOverlay2.addEventListener('click', (e) => {
     if (e.target === modalOverlay2) {
         modalOverlay2.classList.remove('active');
@@ -259,6 +279,21 @@ form2.addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Форма отправлена!');
     modalOverlay2.classList.remove('active');
+});
+
+const openMobileMenu = document.querySelector('.gamburger');
+openMobileMenu.addEventListener('click', () => {
+    const mobileMenu = document.querySelector('.header-mobile');
+    mobileMenu.classList.add('header-mobile_active');
+    mobileMenu.classList.add('active');
+
+});
+const closeMobileMenu = document.querySelector('.modal-close-menu');
+closeMobileMenu.addEventListener('click', () => {
+    const mobileMenu = document.querySelector('.header-mobile');
+    mobileMenu.classList.remove('header-mobile_active');
+    mobileMenu.classList.remove('active');
+
 });
 
 
@@ -279,49 +314,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-const swiperportfolio = new Swiper('.swiperportfolio', {
-    // modules: [Navigation, Pagination, Scrollbar],
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
 
-    autoplay: {
-        delay: 5000,
-    },
-    longSwipesRatio: 0.5,
-    pagination: {
-        clickable: true,
-        el: '.swiper-pagination',
-        type: 'bullets',
-    },
-    navigation: {
-        nextEl: '.swiper2-button-next',
-        prevEl: '.swiper2-button-prev',
-    },
-    breakpoints: {
-
-        // 320: {
-        //     slidesPerView: 1,
-        //     spaceBetween: 0
-        // },
-        // 768: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 0
-        // },
-        // 1280: {
-        //     slidesPerView: 5,
-        //     spaceBetween: 0
-        // }
-    },
-    // Navigation arrows
-    //     nextButton: '.swiper2-button-next',
-    //     prevButton: '.swiper2-button-prev',
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
 
 
 

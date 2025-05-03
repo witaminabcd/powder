@@ -3,10 +3,10 @@
 //@include font-face('Gilroy', 'Gilroy-Regular', $font-primary-regular, normal, woff2);
 //@include font-face('Gilroy', 'gilroy-bold', $font-primary-bold, bold, ttf);
 
-@include font-face('42dotSans', '42/42dotSans-Light', $font-primary-light, light, otf);
-@include font-face('42dotSans', '42/42dotSans-Bold', $font-primary-bold, bold, otf);
-@include font-face('42dotSans', '42/42dotSans-Redular', $font-primary-regular, regular, otf);
-@include font-face('42dotSans', '42/42dotSans-ExtraBold', $font-primary-extrabold, extrabold, otf);
+@include font-face('42dotSans', '42/42dotSans-Light', $font-primary-light, light, ttf);
+@include font-face('42dotSans', '42/42dotSans-Bold', $font-primary-bold, bold, ttf);
+@include font-face('42dotSans', '42/42dotSans-Redular', $font-primary-regular, normal, ttf);
+@include font-face('42dotSans', '42/42dotSans-ExtraBold', $font-primary-extrabold, extrabold, ttf);
 
 //@include font-face('Gilroy', 'Gilroy-Light', $font-primary-light, light, otf);
 
