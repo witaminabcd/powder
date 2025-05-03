@@ -5,9 +5,7 @@
 
     .works__blocks {
       display: grid;
-      //grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
       grid-auto-flow: column;
-      //gap: 20px;
 
       .works__block {
         display: grid;
@@ -34,18 +32,59 @@
 
 
   @media #{$mobile-landscape-only}{
+    display: none!important;
   }
   @media #{$tablet-only}{
+    .works-wrap {
+      @include container();
+      overflow: hidden;
+      .works__blocks {
+        border-radius: 11px;
+        .works__block {
+          border-radius: 11px;
+          img {
+          }
+          .works__block-text {
+            font-size: 11px;
+            padding: 5px;
+          }
+        }
+      }
+    }
   }
   @media #{$tablet-landscape-only}{
+    .works-wrap {
+      @include container();
+      overflow: hidden;
+      .works__blocks {
+        border-radius: 16px;
+        .works__block {
+          border-radius: 16px;
+          img {
+          }
+          .works__block-text {
+            font-size: 16px;
+            padding: 10px;
+          }
+        }
+      }
+    }
   }
   @media #{$desktop-only}{
     .works-wrap {
-    }
-    @include container();
-    overflow: hidden;
-    .works__blocks {
-      grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+      @include container();
+      overflow: hidden;
+      .works__blocks {
+        .works__block {
+          border-radius: 20px;
+          img {
+          }
+          .works__block-text {
+            font-size: 20px;
+            padding: 15px;
+          }
+        }
+      }
     }
   }
 }

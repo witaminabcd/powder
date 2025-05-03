@@ -91,7 +91,7 @@
           .calculate-form-title{
             font-family: 42dot Sans;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 13px;
             letter-spacing: 110%;
             width: 100%;
             text-align: center;
@@ -154,6 +154,7 @@
       }
     }
   }
+
   @media #{$tablet-only}{
     .calculate-wrap {
       @include container();
@@ -381,6 +382,7 @@
       }
     }
   }
+
 }
 
 

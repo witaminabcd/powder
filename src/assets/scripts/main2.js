@@ -28,15 +28,19 @@ const swiper = new Swiper('.swipergood', {
     },
     breakpoints: {
 
-        // 320: {
-        //     slidesPerView: 1,
-        //     spaceBetween: 0
-        // },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 20
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10
         },
-        1280: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        1200: {
+            slidesPerView: 2.5,
+            spaceBetween: 10
+        },
+        1920: {
             slidesPerView: 3,
             spaceBetween: 20
         }
@@ -54,7 +58,7 @@ const swiper = new Swiper('.swipergood', {
 const swiperWorks = new Swiper('.swiperworks', {
     // modules: [Navigation, Pagination, Scrollbar],
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 10,
 
     autoplay: {
@@ -73,14 +77,18 @@ const swiperWorks = new Swiper('.swiperworks', {
     breakpoints: {
 
         320: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        },
-        768: {
             slidesPerView: 2,
-            spaceBetween: 0
+            spaceBetween: 10
         },
-        1280: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        1920: {
             slidesPerView: 3,
             spaceBetween: 20
         }
@@ -98,7 +106,7 @@ const swiperWorks = new Swiper('.swiperworks', {
 const swiperComments = new Swiper('.swipercomments', {
     // modules: [Navigation, Pagination, Scrollbar],
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 10,
 
     autoplay: {
@@ -117,14 +125,18 @@ const swiperComments = new Swiper('.swipercomments', {
     breakpoints: {
 
         320: {
-            slidesPerView: 3,
-            spaceBetween: 0
+            slidesPerView: 2,
+            spaceBetween: 10
         },
-        768: {
+        480: {
             slidesPerView: 3,
-            spaceBetween: 0
+            spaceBetween: 10
         },
-        1280: {
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
+        1920: {
             slidesPerView: 3,
             spaceBetween: 20
         }

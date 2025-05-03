@@ -65,6 +65,10 @@ p{
     width: 148px;
     height: 32px;
   }
+  @media #{$mobile-landscape-only}{
+    width: 148px;
+    height: 32px;
+  }
   }
 
 .banner-btn {
@@ -149,7 +153,24 @@ p{
 
     }
   }
+  @media #{$mobile-landscape-only}{
+    .btn-light-green {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      width: 148px;
+      height: 32px;
+      span {
+        font-size: 11px;
+      }
+    }
+    &:after {
 
+      width: 32px;
+      height: 32px;
+
+    }
+  }
 
 }
 

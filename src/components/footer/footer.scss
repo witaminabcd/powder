@@ -75,4 +75,142 @@
 
    }
  }
+  @media #{$mobile-landscape-only}{
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 0 20px;
+    border-radius: 0;
+
+    &__columns {
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    &__column {
+      width: 80%;
+    }
+    .footer__bottom{
+      .footer__bottom-title{
+        font-family: Bounded;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 0%;
+
+        margin-bottom: 10px;
+      }
+      p{
+        font-family: 42dot Sans;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0%;
+        text-align: center;
+
+      }
+      p:nth-child(3){
+        margin-top: 10px;
+
+      }
+    }
+  }
+  @media #{$tablet-only}{
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 0 20px;
+    border-radius: 0;
+
+    &__columns {
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    &__column {
+      width: 40%;
+    }
+    .footer__bottom{
+      .footer__bottom-title{
+        font-family: Bounded;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 0%;
+
+        margin-bottom: 10px;
+      }
+      p{
+        font-family: 42dot Sans;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0%;
+        text-align: center;
+
+      }
+      p:nth-child(3){
+        margin-top: 10px;
+
+      }
+    }
+  }
+  @media #{$tablet-landscape-only}{
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 0 20px;
+    border-radius: 0;
+
+    &__columns {
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    &__column {
+      width: 40%;
+    }
+    .footer__bottom{
+      .footer__bottom-title{
+        font-family: Bounded;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 0%;
+
+        margin-bottom: 10px;
+      }
+      p{
+        font-family: 42dot Sans;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0%;
+        text-align: center;
+
+      }
+    }
+  }
+  @media #{$desktop-only}{
+    padding: 30px 0 20px;
+
+    &__columns {
+      margin-bottom: 20px;
+    }
+      .footer__bottom{
+      .footer__bottom-title{
+        font-family: Bounded;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        margin-bottom: 15px;
+      }
+      p{
+        font-family: 42dot Sans;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+    }
+  }
 }

@@ -1,0 +1,309 @@
+@media #{$mobile-landscape-only}{
+  .tehnolog-wrap {
+    @include container();
+
+    .tehnolog-form {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 10px;
+
+      form {
+        order: 2;
+        gap: 10px;
+        border-radius: 20px;
+        padding: 30px 15px;
+
+        .tehnolog-form-title{
+          font-family: 42dot Sans;
+          font-weight: 400;
+          font-size: 13px;
+          letter-spacing: 110%;
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .tehnolog-form-subtitle{
+          font-size: 10px;
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .tehnolog-form-name,.tehnolog-form-phone,.tehnolog-form-submit{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        input{
+          font-family: 42dot Sans;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0%;
+          padding: 0 20px;
+          height:32px;
+          width: 80%;
+
+        }
+        .banner-btn{
+          display: flex;
+          cursor: pointer;
+          width: calc(80% + 40px);
+          .btn-light-green {
+            width: 100%;
+          }
+          &:after{
+            content: "" ;
+            background: url("../img/btnarrow.svg")  center no-repeat;
+            width: 32px;
+            height: 32px;
+            background-size: 14px !important;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: $color-light-green;
+            border-radius:100px ;
+          }
+        }
+      }
+      .tehnolog-img{
+        order: 1;
+        //object-fit: cover;
+        width: 100%;
+        max-height: 300px;
+        img{
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$tablet-only}{
+  .tehnolog-wrap {
+    @include container();
+
+    .tehnolog-form {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 10px;
+
+      form {
+        order: 2;
+        gap: 10px;
+        border-radius: 20px;
+        padding: 30px;
+
+        .tehnolog-form-title{
+          font-family: 42dot Sans;
+          font-weight: 400;
+          font-size: 15px;
+          letter-spacing: 110%;
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .tehnolog-form-subtitle{
+          font-size: 10px;
+          width: 70%;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .tehnolog-form-name,.tehnolog-form-phone,.tehnolog-form-submit{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        input{
+          font-family: 42dot Sans;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0%;
+          padding: 0 20px;
+          height:32px;
+          width: 50%;
+
+        }
+        .banner-btn{
+          display: flex;
+          cursor: pointer;
+          width: calc(50% + 40px);
+          .btn-light-green {
+            width: 100%;
+          }
+          &:after{
+            content: "" ;
+            background: url("../img/btnarrow.svg")  center no-repeat;
+            width: 32px;
+            height: 32px;
+            background-size: 14px !important;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: $color-light-green;
+            border-radius:100px ;
+          }
+        }
+      }
+      .tehnolog-img{
+        order: 1;
+        //object-fit: cover;
+        width: 100%;
+        max-height: 300px;
+        img{
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+@media #{$tablet-landscape-only}{
+  .tehnolog-wrap {
+    @include container();
+
+    .tehnolog-form {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 10px;
+
+      form {
+        order: 2;
+        gap: 10px;
+        border-radius: 20px;
+        padding: 30px;
+
+        .tehnolog-form-title{
+          font-family: 42dot Sans;
+          font-weight: 400;
+          font-size: 20px;
+          letter-spacing: 110%;
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+
+        }
+        .tehnolog-form-subtitle{
+          font-size: 14px;
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+
+        }
+        .tehnolog-form-name,.tehnolog-form-phone,.tehnolog-form-submit{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        input{
+          font-family: 42dot Sans;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0%;
+          padding: 0 20px;
+          height:42px;
+          width: 50%;
+
+        }
+        .banner-btn{
+          display: flex;
+          cursor: pointer;
+          width: calc(50% + 40px);
+          .btn-light-green {
+            width: 100%;
+          }
+          &:after{
+            content: "" ;
+            background: url("../img/btnarrow.svg")  center no-repeat;
+            width: 45px;
+            height: 45px;
+            background-size: 14px !important;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: $color-light-green;
+            border-radius:100px ;
+          }
+        }
+      }
+      .tehnolog-img{
+        order: 1;
+        //object-fit: cover;
+        width: 100%;
+        max-height: 300px;
+        img{
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+@media #{$desktop-only}{
+  .tehnolog-wrap {
+    @include container();
+
+    .tehnolog-form {
+      display: grid;
+      grid-template-columns: calc(50% - 10px)  calc(50% - 10px);
+      gap: 10px;
+
+      form {
+        gap: 10px;
+        border-radius: 20px;
+        .tehnolog-form-title{
+          font-family: 42dot Sans;
+          font-weight: 400;
+          font-size: 20px;
+          letter-spacing: 110%;
+          width: 90%;
+        }
+        .tehnolog-form-subtitle{
+          font-size: 14px;
+          width: 90%;
+        }
+        input{
+          font-family: 42dot Sans;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0%;
+          padding: 0 20px;
+          height:42px;
+          width: 70%;
+
+
+        }
+        .banner-btn{
+          display: flex;
+          cursor: pointer;
+          .btn-light-green {
+            width: 70%;
+          }
+          &:after{
+            content: "" ;
+            background: url("../img/btnarrow.svg")  center no-repeat;
+            width: 45px;
+            height: 45px;
+            background-size: 14px !important;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: $color-light-green;
+            border-radius:100px ;
+          }
+        }
+      }
+      .tehnolog-img{
+        img{
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
